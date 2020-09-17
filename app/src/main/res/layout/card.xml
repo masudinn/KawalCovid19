@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:layout_margin="20dp"
+    android:layout_gravity="center"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/region"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Region    : "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/valueReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@id/region"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Indo"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/confirm"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@id/region"
+            android:layout_margin="2dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Confirm : "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/valueConfirm"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@id/valueReg"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@id/confirm"
+            android:fontFamily="@font/poppinsbold"
+            android:text="212112"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/death"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@id/confirm"
+            android:layout_margin="2dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Death      : "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/valueDeath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/valueConfirm"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@id/death"
+            android:fontFamily="@font/poppinsbold"
+            android:text="1111"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/recover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/death"
+            android:layout_margin="2dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Recover : "
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/valueRecover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/valueDeath"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@id/recover"
+            android:fontFamily="@font/poppinsbold"
+            android:text="12"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recover"
+            android:layout_margin="2dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Active      : "
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/valueActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/valueRecover"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@id/active"
+            android:fontFamily="@font/poppinsbold"
+            android:text="122121"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+
