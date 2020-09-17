@@ -25,11 +25,11 @@ class RecyclerAdapter(private val model: Corona, private val context: Context) :
 
     @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.itemView.valueReg.text = model[position].attributes?.countryRegion
-        holder.itemView.valueConfirm.text = model[position].attributes?.confirmed.toString()
-        holder.itemView.valueDeath.text = "${model[position].attributes?.deaths}"
-        holder.itemView.valueRecover.text ="${model[position].attributes?.recovered }"
-        holder.itemView.valueActive.text = "Active :  ${model[position].attributes?.active}"
+        holder.itemView.valueReg.text = model[position].attributes.countryRegion
+        holder.itemView.valueConfirm.text = "${model[position].attributes.confirmed}"
+        holder.itemView.valueDeath.text = "${model[position].attributes.deaths}"
+        holder.itemView.valueRecover.text ="${model[position].attributes.recovered }"
+        holder.itemView.valueActive.text = "${model[position].attributes.active}"
 
     }
 }

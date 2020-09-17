@@ -4,18 +4,18 @@ package com.masudin.kawalcovid19.Model
 class Corona:ArrayList<coronaItem>()
 
 data class coronaItem(
-	val attributes: Attributes? = null
+	val attributes: Attributes
 )
 
 data class Attributes(
-	val oBJECTID: Int? = null,
-	val long: Int? = null,
+	val oBJECTID: Int,
+	val long: Int,
 	val recovered: Int,
-	val countryRegion: String? = null,
-	val active: Int? = null,
-	val lastUpdate: Long? = null,
-	val deaths: Int? = null,
-	val confirmed: Int? = null,
-	val lat: Int? = null
+	val countryRegion: String,
+	val active: Int,
+	val lastUpdate: Long,
+	val deaths: Int,
+	val confirmed: Int,
+	val lat: Int
 )
 

@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun loadData() {
-        val api : ApiService = ApiClient().callService()
+        val api : ApiService = ApiClient().apiService
         val call : Call<Corona> = api.getCorona()
         call.enqueue(object : Callback<Corona> {
             override fun onFailure(call: Call<Corona>, t: Throwable) {
