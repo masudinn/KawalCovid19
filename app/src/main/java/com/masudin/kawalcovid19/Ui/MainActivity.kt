@@ -18,12 +18,19 @@ import retrofit2.Response
 
 
 class MainActivity : AppCompatActivity() {
+    val corona = Corona()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        showProgress()
+        val adapterView = RecyclerAdapter(corona,this)
+        val lManager = LinearLayoutManager(this@MainActivity)
 
+
+        rv.layoutManager = lManager
+        rv.adapter = adapterView
+        showProgress()
         loadData()
 
     }
@@ -39,6 +46,7 @@ class MainActivity : AppCompatActivity() {
 
             override fun onResponse(call: Call<Corona>, response: Response<Corona>) {
                 dismissProgress()
+                Toast.makeText(this@MainActivity, "Berhasil", Toast.LENGTH_SHORT).show()
                 val lManager = LinearLayoutManager(this@MainActivity)
                 val adapterView = RecyclerAdapter(response.body()!!, this@MainActivity)
                 rv.layoutManager = lManager
