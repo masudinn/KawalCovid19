@@ -27,7 +27,6 @@ class MainActivity : AppCompatActivity() {
         val adapterView = RecyclerAdapter(corona,this)
         val lManager = LinearLayoutManager(this@MainActivity)
 
-
         rv.layoutManager = lManager
         rv.adapter = adapterView
         showProgress()

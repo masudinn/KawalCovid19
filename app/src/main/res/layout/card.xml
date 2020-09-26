@@ -30,7 +30,6 @@
             android:layout_margin="2dp"
             android:layout_toRightOf="@id/region"
             android:fontFamily="@font/poppinsbold"
-            android:text="Indo"
             android:textSize="20sp" />
 
         <TextView
@@ -53,7 +52,6 @@
             android:layout_margin="2dp"
             android:layout_toRightOf="@id/confirm"
             android:fontFamily="@font/poppinsbold"
-            android:text="212112"
             android:textSize="20sp" />
 
         <TextView
@@ -75,7 +73,6 @@
             android:layout_margin="2dp"
             android:layout_toRightOf="@id/death"
             android:fontFamily="@font/poppinsbold"
-            android:text="1111"
             android:textSize="20sp" />
 
         <TextView
@@ -95,7 +92,6 @@
             android:layout_margin="2dp"
             android:layout_toRightOf="@id/recover"
             android:fontFamily="@font/poppinsbold"
-            android:text="12"
             android:textSize="20sp" />
 
         <TextView
@@ -115,7 +111,6 @@
             android:layout_margin="2dp"
             android:layout_toRightOf="@id/active"
             android:fontFamily="@font/poppinsbold"
-            android:text="122121"
             android:textSize="20sp" />
     </RelativeLayout>
 
